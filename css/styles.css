@@ -318,7 +318,7 @@ nav h1 a {
 @media screen and (max-width: 1200px) {
 	#breadcrumb {
 		width: 100%;
-		padding: 10px 60px 16px;
+		padding: 10px 40px 16px;
 	}
 
 	.leaflet-top.leaflet-left,
@@ -349,9 +349,34 @@ nav h1 a {
 
 	#reviews-container {
 		top: 100px;
+		width: 85%;
+	}
+
+	#reviews-list li {
+		width: 100%;
 	}
 
 	.inside #footer {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 674px) {
+	#restaurant-container {
+		margin: 0 10px 10px;
+	}
+
+	#reviews-container {
+		padding: 30px 10px 80px;
+	}
+
+	.inside #footer {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 443px) {
+	.filter-options {
+		height: 130px;
 	}
 }
