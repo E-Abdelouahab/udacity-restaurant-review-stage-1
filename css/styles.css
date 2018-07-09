@@ -312,3 +312,46 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Media Queries ====================== */
+
+@media screen and (max-width: 1200px) {
+	#breadcrumb {
+		width: 100%;
+		padding: 10px 60px 16px;
+	}
+
+	.leaflet-top.leaflet-left,
+	.leaflet-bottom {
+		display: none;
+	}
+
+	.inside #map-container,
+	#restaurant-container,
+	#restaurant-cuisine,
+	#reviews-container,
+	.inside #footer {
+		position: relative;
+	}
+
+	.inside #map-container {
+		height: 360px;
+		width: 100%
+	}
+
+	#restaurant-container {
+		padding: 0;
+		width: 100%;
+		top: 100px;
+		border: none;
+		margin: 0 40px 20px;
+	}
+
+	#reviews-container {
+		top: 100px;
+	}
+
+	.inside #footer {
+		width: 100%;
+	}
+}
