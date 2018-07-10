@@ -321,11 +321,7 @@ nav h1 a {
 		padding: 10px 40px 16px;
 	}
 
-	.leaflet-top.leaflet-left,
-	.leaflet-bottom {
-		display: none;
-	}
-
+	.inside header,
 	.inside #map-container,
 	#restaurant-container,
 	#restaurant-cuisine,
@@ -336,26 +332,27 @@ nav h1 a {
 
 	.inside #map-container {
 		height: 360px;
-		width: 100%
+		width: 100%;
+		top: 0;
+	}
+
+	#restaurant-container,
+	#reviews-container {
+		top: 10px;
 	}
 
 	#restaurant-container {
 		padding: 0;
 		width: 100%;
-		top: 100px;
 		border: none;
 		margin: 0 40px 20px;
 	}
 
 	#reviews-container {
-		top: 100px;
 		width: 85%;
 	}
 
-	#reviews-list li {
-		width: 100%;
-	}
-
+	#reviews-list li,
 	.inside #footer {
 		width: 100%;
 	}
