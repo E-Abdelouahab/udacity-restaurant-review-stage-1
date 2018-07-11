@@ -75,7 +75,8 @@ initMap = () => {
   self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
         zoom: 12,
-        scrollWheelZoom: false
+        scrollWheelZoom: false,
+        keyboard: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiamFzb24tYXJub2xkIiwiYSI6ImNqamVzcTM0eTJoY24zd3AyOThzb3JxMHoifQ.aZAUhY89M27YWI5vUSsnbA',
@@ -198,6 +199,9 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
+  let markers = document.getElementsByClassName('leaflet-marker-icon');
+  let markersArr = Array.from(markers);
+  markersArr.forEach(marker => marker.setAttribute('tabindex', '-1'));
 }
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
