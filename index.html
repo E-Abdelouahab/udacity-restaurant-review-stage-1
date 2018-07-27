@@ -14,7 +14,7 @@
 <body>
   <header role="header">
     <nav role="nav">
-      <h1 role="link"><a href="/">Restaurant Reviews</a></h1>
+      <h1 tabindex="0" role="link"><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
@@ -26,12 +26,12 @@
       <div aria-label="Filter Options" class="filter-options">
         <h2 role="title">Filter Results</h2>
         <label>
-          <select role="select" aria-label="Select Neighborhood Dropdown" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <select tabindex="0" role="select" aria-label="Select Neighborhood Dropdown" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
         </label>
         <label>
-          <select role="select" aria-label="Select Cuisine Dropdown" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <select tabindex="0" role="select" aria-label="Select Cuisine Dropdown" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
             <option value="all">All Cuisines</option>
           </select>
         </label>
